@@ -74,7 +74,7 @@ const BridgeComp1 = () => {
           <p className="font-openSans text-gray-400 mx-4 mt-16">
             Delegation/Staking takes place on Ethereum. Do not deposit funds to
             Shibarium for this purpose. To delegate or stake please visit the
-           <span className="text-orange-700"> Staking UI</span> .
+            <span className="text-orange-700"> Staking UI</span> .
           </p>
         </>
       ) : (

@@ -37,7 +37,7 @@ const Table1 = () => {
   const [search, setSearch] = useState("");
 
   const filteredData = data.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
+    item.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
