@@ -18,8 +18,8 @@ const BridgeComp2 = () => {
   const dispatch = useDispatch();
   dispatch(AddData(diposite));
   return (
-    <div className="bg-slate-900  w-[25rem] rounded-3xl pt-5 p-4 h-[80vh] lg:h-[100vh]  mt-[3rem] mx-3 lg:mt-0 ">
-      <div className=" grid grid-flow-col mt-3   bg-white w-full justify-between p-1 pl-5 rounded-lg">
+    <div className=" bg-slate-900  w-[25rem] sm:w-[24rem]  rounded-3xl pt-5 p-4   mx-1 lg:mb-3 lg:mt-[-1rem] mt-5   sm:ml-3  sm:h-[30rem] h-[30rem] lg:h-[40rem] ">
+      <div className=" grid grid-flow-col mt-3   bg-white w-full justify-between p-1 pl-5 rounded-lg active:bg">
         <div
           onClick={() => handleDivClick(1)}
           className={` cursor-pointer py-2 pl-14 col-span-6 my-1 font-sans   ${
@@ -41,7 +41,7 @@ const BridgeComp2 = () => {
           Withdraw
         </div>
       </div>
-      <div className="Box-1">
+      <div className="Box-1 mt-5">
         <h3 className="text-white font-openSans text-lg py-4 px-2 ">From</h3>
 
         <div className="bg-white p-4 flex justify-between rounded-lg">

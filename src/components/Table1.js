@@ -41,12 +41,12 @@ const Table1 = () => {
   );
 
   return (
-    <div className="bg-gray-900 w-[65vw] rounded-xl overflow-x-scroll xl:overflow-hidden border border-gray-500 ">
-      <div className="bg-gray-900 flex md:w-[65vw] rounded-2xl border-b border-gray-500 w-[full]">
-        <div className="px-4 py-2 mt-1 flex-1 ml-[1rem]">Name</div>
-        <div className="px-4 py-2 mt-1 flex-1">Balance</div>
-        <div className="px-4 py-2 mt-1 flex-1">Action</div>
-        <div className="px-4 py-2 mt-1 flex-1">
+    <div className="bg-gray-900  rounded-xl overflow-x-scroll xl:overflow-hidden border border-gray-500 w-[22rem] sm:w-[22rem] mx-6 md:w-[23rem] lg:w-[41rem] xl:w-[49rem] overflow-y-scroll ">
+      <div className="bg-gray-900 flex space-x-3 rounded-2xl border-b border-gray-500   w-[22.5rem] sm:w-[30rem] md:w-[43rem] lg:w-[49rem] ">
+        <div className="px-4 py-2 mt-1 flex-1 ml-2 text-gray-100">Name</div>
+        <div className="px-4 py-2 mt-1 flex-1 text-gray-100 ml-[-3rem]">Balance</div>
+        <div className="px-4 py-2 mt-1 flex-1 text-gray-100 ml-[-3rem]">Action</div>
+        <div className="px-4 py-2 mt-1 flex-1 text-gray-100 ">
           <input
             type="text"
             placeholder="Search..."
@@ -59,18 +59,18 @@ const Table1 = () => {
       {filteredData.map((item) => (
         <div
           key={item.id}
-          className="rounded-2xl flex flex-row align-middle items-start py-4 text-white whitespace-nowrap"
+          className="space-x-7 lg:space-x-2 rounded-2xl flex sm:flex-row align-middle items-start py-4 text-white whitespace-nowrap"
         >
           <img
             className="w-6 h-6 rounded-full ml-5"
             src={item.pic}
             alt="avatar"
           />
-          <div className="text-gray-400 flex-1 mx-4">{item.name}</div>
-          <div className="text-gray-400 flex-1 ">{item.balance}</div>
-          <div className="text-gray-400 flex-1 text-start ml-16">Deposit</div>
-          <div className="text-gray-400 flex-1 ">Whitdraw</div>
-          <div className="text-gray-400 flex-1 text-center mx-6">Send</div>
+          <div className="text-gray-100 flex-1 mx-4">{item.name}</div>
+          <div className="text-gray-100 flex-1 ">{item.balance}</div>
+          <div className="text-gray-100 flex-1 text-start ">Deposit</div>
+          <div className="text-gray-100 flex-1  ">Whitdraw</div>
+          <div className="text-gray-100 flex-1 text-center mx-6">Send</div>
         </div>
       ))}
     </div>

@@ -4,17 +4,17 @@ import WallateHead from "./WallateHead";
 
 const MainContainer = () => {
   return (
-    <div className="text-white p-4 border border-black m-4 rounded-lg h-full sm:h-full w-[60rem] bg-gray-950 overflow-y-scroll">
+    <div className="z-20 overflow-y-hidden sm:overflow-y-hidden border h-auto md:h-auto md:overflow-hidden border-black m-4 rounded-lg   w-[25rem] sm:w-[26rem] md:w-[27rem]  sm:mx-0 lg:w-[45rem] xl:w-[55rem] 2xl:w-[55rem]   bg-gray-950 absolute right-0 md:right-2 xl:absolute xl:right-[9rem]  xl:left-[14rem] lg:absolute lg:left-[14rem] md:absolute md:left-[13rem] sm:absolute sm:left-[13rem] sm:h-[80rem] lg:h-[50rem] ">
       <WallateHead />
-      <h1 className="font-sans text-2xl">My Balance</h1>
-      <div className="first-container grid-cols-3  lg:grid lg:grid-cols-12 gap-4  flex-col">
-        <div className="box-1 mx-4 sm:mx-4  lg:mx-0  col-span-3 bg-gray-900 rounded-lg mt-4 py-8 h-[8.5rem] p-4 ">
-          <div className="text-xl sm:text-5xl font-bold text-center lg:text-3xl">
+      <h1 className="font-sans text-2xl text-white mx-6">My Balance</h1>
+      <div className="first-container grid-cols-3 sm:grid-cols-3 md:flex-col lg:flex-col lg:grid lg:grid-cols-12 gap-4  flex-col sm:w-[25rem] lg:w-[42rem] lg:mx-6 xl:w-[50rem]">
+        <div className="box-1 mx-4 sm:mx-4  lg:mx-0 lg:col-span-3 col-span-3 bg-gray-900 rounded-lg mt-4 py-8 h-[8.5rem] p-4 ">
+          <div className="text-xl sm:text-5xl font-bold text-center lg:text-3xl text-white">
             20.000$
           </div>
-          <div className="text-center ">Shibarium Mainnet</div>
+          <div className="text-center text-white">Shibarium Mainnet</div>
         </div>
-        <div className="box-2 col-span-3 p-4 ">
+        <div className="box-2 col-span-3 p-4  lg:col-span-3 ">
           <div className="flex   bg-gray-700 rounded-lg p-4 mb-2  ">
             <div className="flex items-center">
               <svg
@@ -97,7 +97,7 @@ const MainContainer = () => {
                   fill="white"
                 />
               </svg>
-              <div className="ml-4 whitespace-nowrap ">Recive</div>
+              <div className="ml-4 whitespace-nowrap text-white ">Recive</div>
             </div>
           </div>
           <div className="flex  bg-gray-700 rounded-lg p-4  ">
@@ -120,11 +120,11 @@ const MainContainer = () => {
                   stroke-width="2"
                 />
               </svg>
-              <div className="ml-4 whitespace-nowrap ">Send</div>
+              <div className="ml-4 whitespace-nowrap text-white ">Send</div>
             </div>
           </div>
         </div>
-        <div className="box-3 mx-4 col-span-6 bg-gray-900 p-2 m-2 py-6 rounded-lg md:h-[8.5rem] mt-[1rem] ">
+        <div className="box-3 mx-4 col-span-6 bg-gray-900 p-2 m-2 pb-2  rounded-lg md:h-[8.5rem] mt-[1rem] ">
           <div className="bg-white text-gray-600 font-semibold p-2 rounded-lg mb-2 text-center ">
             Move funds from Ethereum to Shibarium
           </div>
@@ -134,7 +134,7 @@ const MainContainer = () => {
         </div>
       </div>
       <div>
-        <h1 className="font-sans text-2xl my-6">Assets on Shibarium</h1>
+        <h1 className="font-sans text-2xl my-6 text-white mx-6">Assets on Shibarium</h1>
       </div>
       <Table1 />
     </div>

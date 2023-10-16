@@ -1,10 +1,11 @@
 import React from "react";
+import MenuButton from "./MenuButton";
 
 const WallateHead = () => {
   return (
-    <div className="h-6 px-5 space-x-2 lg:justify-end flex flex-row my-10 space-y-3 justify-end lg:flex lg:flex-row">
-      <div className="px-10 flex lg:left-[35rem]">
-        <div className="text-blue-600">
+    <div className="h-6 px-5 mr-[3.5rem] space-x-2 lg:justify-end flex flex-row my-10 space-y-3 justify-end lg:flex lg:flex-row">
+      <div className="px-10 lg:left-[35rem] flex ">
+        <div className="text-blue-600 hidden md:block ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -50,9 +51,9 @@ const WallateHead = () => {
             />
           </svg>
         </div>
-        <div className="text-white w-5 mt-[4px] ml-2">Apps</div>
+        <div className="text-white w-5 mt-[4px] ml-2 hidden md:block">Apps</div>
       </div>
-
+<MenuButton/>
       <div>
         <button className="hidden mt-[-1rem] lg:left-[55rem] text-white bg-yellow-500 px-4 py-2 rounded-lg lg:flex items-center">
           <img

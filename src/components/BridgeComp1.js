@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const BridgeComp1 = () => {
   const diposite = useSelector((store) => store.Bridge.AddBridgeData);
   return (
-    <div className=" flex flex-col justify-between text-white bg-slate-900 h-[100vh] overflow-y-scroll lg:h-[100vh] lg:overflow-y-hidden  w-[25rem] rounded-3xl  mx-4 ">
+    <div className=" flex flex-col justify-between text-white bg-slate-900     w-[24rem] rounded-3xl    lg:mt-[-1rem] lg:overflow-y-hidden sm:h-[35rem] h-[40rem] md:h-[41rem] lg:h-[40rem] mx-1 sm:ml-3 sm:overflow-y-hidden sm:w-[24rem] sm:overflow-x-hidden">
       <div>
         <h1 className="text-3xl p-5 font-openSans">Shibarium Bridge</h1>
         {!diposite ? (
@@ -13,9 +13,9 @@ const BridgeComp1 = () => {
           <h3 className="font-openSans pt-4 pl-4"> Withdraw Overview:</h3>
         )}
         {!diposite ? (
-          <p className="font-openSans px-4 text-gray-400 whitespace-nowrap">
+          <p className="font-openSans px-4 text-gray-400 ">
             {" "}
-            The deposit process consists of a single transaction
+            The deposit process consists of a single <br /> transaction
           </p>
         ) : (
           <p className="font-openSans px-4 text-gray-400 whitespace-nowrap">
@@ -38,7 +38,7 @@ const BridgeComp1 = () => {
       </div>
       {!diposite ? (
         <>
-          <div className="shortBox flex items-center mx-4 mb-[-4rem] space-x-2  mt-20">
+          <div className="shortBox flex items-center mx-4 mb-[-4rem] space-x-2  mt-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -91,7 +91,7 @@ const BridgeComp1 = () => {
               src="https://s3-alpha-sig.figma.com/img/7f02/0236/53a1c0fdd21914b2aad33c4ef1bbb442?Expires=1698019200&Signature=kG2ZbUR0vE-DShMqkPzcQwOq~tF0n9NNxKnsYdmG05~JlVfXErefOSIF0oD0sbBkuIYIjOOj3yL6JzVNamdmsUb96wiGYpkLCkA6Id3s6YkmUasEOtuidMeOgXlL2MbArJkHlOX~oD3NIPtn6yepVompkc234sJM44LDSANHZK2gQmFyhj5aBOBrJhCmansDb-ZQFUN3txhNGsej3gVR57VVvo8CaXp11ZdS996~TilAXHeWjsowxmi0zoBQksIZqQIHkvKYRrCCpQVGpJFPeXfpb3rZdvIvykkCPt-nJ81sA209-Q-ZK1vOgluzs4vPDz~Iyxq~iXgKJFTWj~lC5g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
               alt=""
             />
-            <div className="flex space-x-16">
+            <div className="flex space-x-12">
               <p className="font-openSans text-gray-400 whitespace-nowrap">
                 Estimation of GAS fee required
               </p>
@@ -100,14 +100,14 @@ const BridgeComp1 = () => {
           </div>
         )}
         {/*  */}
-        <div className="flex items-center space-x-2">
+        <div className=" flex items-center space-x-2">
           <img
-            className="w-4"
+            className="w-4  "
             src="https://s3-alpha-sig.figma.com/img/179c/bf4c/2f9da81c73f90900fce4e6ceb89c2c19?Expires=1698019200&Signature=q2j~ERO-0tHOqad0WXK3mkuUUyJs2qYK2X~bQEtDRpjB1MMmfu7JipcobK5vADinjj~KFkjFxGTpb~bNi9i8iucFJJbcoJBRfgaJjPXOdaq1ylENhwf~~nW0tDpj7oTX8yEuxSgdRXqIQ-qBrrLGTUlN6KPdx62UCKKPR~0f8tX1S8kZFiZvFhn-elndjzZ~XM8xB0Uz8amYqeFAQ25dhCYqc-tpyrd7gAVaLbvS03331LUjBC3oBC4lvV8BcyRfw4bfsSEvhgB8CZRNp8BA0mOp~l0zOpXON6qfBwajaoNQcBDyWp-CQb3~HmFEvsgAjHPKWec9FrtFxzSq5CFZug__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
             alt=""
           />
-          <div className="flex space-x-16">
-            <p className="font-openSans text-gray-400 whitespace-nowrap">
+        <div className="flex space-x-12 ">
+            <p className="  font-openSans text-gray-400 whitespace-nowrap">
               Estimation of GAS fee required
             </p>
             <p className="font-openSans text-gray-400">$10.00</p>
